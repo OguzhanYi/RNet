@@ -461,9 +461,6 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
           <h3>Abstract</h3>
             <hr style="margin-top:0px">
               <div class="row justify-content-center" style="align-items:center; display:flex;">
-                <video playsinline="" autoplay="autoplay" loop="loop" preload="" muted="muted" id="header_vid" width="95%">
-                      <source src="RENI/imgs/teaser.m4v" type="video/mp4">
-                </video>
               </div>
             <br>
             <p class="text-justify">
@@ -475,131 +472,10 @@ as the heat or wave kernel signature. As many non-rigid shape retrieval algorith
       </div>
     
   </section>
-  <br>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-            <h3>RiemannNet</h3>
-            <hr style="margin-top:0px">
-            <p class="text-justify"> 
-              We extend Vector Neurons to a neural field representation 
-              for spherical images, constructing a generative model of spherical 
-              signals that is rotation-equivariant 
-              with respect to the latent representation of the signal. Since our 
-              neural field is equivariant we do not need to augment our 
-              training data over the space of rotations. Observing a 
-              spherical signal once means we can reconstruct it with the same 
-              accuracy in any rotation.
-              <!--Grid row-->
-              </p><div class="row">
-                <!--Grid column-->
-                <div class="col-lg-12">
-                  <img src="RENI/imgs/conditional_spherical_neural_fields.svg" class="img-fluid mb-4" alt="" data-wow-delay="0.3s">
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <br>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-            <h3>RENI - A Rotation-Equivariant Natural Illumination Model</h3>
-            <hr style="margin-top:0px">
-            <p class="text-justify"> 
-              Applying our rotation-equivariant conditional spherical neural field we create 
-              a statistical model of natural illumination. Natural environments 
-              have a canonical “up” direction (defined by gravity) but arbitrary rotation about this vertical axis. 
-              We therefore restricted our invariance to rotations only about the vertical (y)-axis. Training on our 
-              curated dataset of 1.6K HDR equirectangular images of natural scenes we demonstrate better performance than 
-              both Spherical Harmonics and Spherical Gaussians at reconstructing natural illumination environments using
-              a latent dimensionality of equal size.
-              <!--Grid row-->
-              <div class="row justify-content-center" style="align-items:center; display:flex;">
-                <!--Grid column-->
-                <div class="col pr-3">
-                  <img src="RENI/imgs/comparison.svg" class="img-fluid mb-4"">
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <br>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h5>Illumination Prior</h5>
-          <hr style="margin-top:0px">
-          <p class="text-justify"> 
-Sampling from and interpolating through RENI's latent space will only produce plausible illumination environments. This 
-can be used to constrain inverse rendering problems or as a generator of realistic synthetic data.
-              <div class="row justify-content-center" style="align-items:center; display:flex;">
-                <video playsinline="" autoplay="autoplay" loop="loop" preload="" muted="muted" id="header_vid" width="70%">
-                      <source src="RENI/imgs/random_interpolations.m4v" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <br>
-
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-center">
-            <h5>Inverse Rendering</h5>
-            <hr style="margin-top:0px">
-            <p class="text-justify"> 
-We implemented a normalised Blinn-Phong environment map shader in PyTorch3D, enabling fully differentiable rendering. 
-Fitting RENI to a render of a 3D object with fixed geometry, pose, camera and material parameters
-such that only lighting in the scene is unknown.
-              <!--Grid row-->
-              <div class="row justify-content-center" style="align-items:center; display:flex;">
-                <!--Grid column-->
-                <div class="col pr-3">
-                  <img src="RENI/imgs/inverse_rendering.svg" class="img-fluid mb-4"">
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <br>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-            <h5>Environment Map Completion</h5>
-            <hr style="margin-top:0px">
-            <p class="text-justify"> 
-              RENI can hallucinate plausible completions of the environments when provided only a small cutout in it's 
-              training loss, making sensible estimations about the possible colours and shapes of land and sky and often predicts 
-              accurate sun locations despite the sun being outside the image crop.
-              <!--Grid row-->
-              </p><div class="row">
-                <!--Grid column-->
-                <div class="col-lg-12">
-                  <img src="RENI/imgs/inpainting.svg" class="img-fluid mb-4" alt="" data-wow-delay="0.3s">
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <br>
 
 
-  <br>
+
+
 
 
   <!-- citing -->
