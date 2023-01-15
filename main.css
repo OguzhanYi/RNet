@@ -1,0 +1,5 @@
+ .grad1 img {
+   -webkit-mask-image: radial-gradient(ellipse 115% 140% at 55% 50%, black 40%, transparent 50%);
+    mask-image: radial-gradient(99% 99% at  50% 50%, black 40%, transparent 50%);
+	width:400px;
+	}
